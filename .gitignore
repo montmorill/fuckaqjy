@@ -1,0 +1,8 @@
+# qbank 的 LIMIT 调试产物（只写单独文件，不覆盖正式交付物）
+aqjy_题库速查.limit*.md
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="/ept/s/xPaper/css/item.css?335188629.css"/>
+<link rel="stylesheet" href="/ept/s/css/practice.css?335188629.css"/>
+
+<div class="navigation">
+	<li><a href="/ept/manage/practice/list" target="navTab">练习中心</a></li>
+	<li class="active">在线练习</li>
+</div>
+
+<div class="practice">
+	<input type="hidden" name="category" value="practice" />
+	<input type="hidden" name="subjectId" value="91" />
+	<input type="hidden" name="type" value="0" />
+	
+	<div class="practice-panel clear">
+		<div class="practice-panel-left">
+			当前：<i>-</i> / <i>0</i>
+		</div>
+		<div class="practice-panel-right">
+			 
+			 <div class="star collectBtn"><i></i><span>收藏</span></div>
+			 <div class="report reportBtn"><i class="icon-edit"></i><span>纠错</span></div>
+			 <div class="wrong"><i></i><span>0</span></div>
+			 <div class="correct"><i></i><span>0</span></div>
+			 <div class="diamond"><i></i>选题卡</div>
+		</div>
+		<div class="practice-panel-item">
+		</div>
+	</div>
+
+	<div class="practice-main">
+		<div id="div-praxis-box">
+			<div class="placeholder">
+				<p>试题不存在</p>
+				<p><button class="btn btn-white-blue" onclick="praxisRemoveClick()">移除试题</button></p>
+			</div>
+		</div>
+		
+		<div class="operation clear">
+			<div>
+			</div>
+			<div>
+				<button class="btn btn-white-blue prevBtn">上一题</button>
+				<button class="btn btn-white-blue nextBtn">下一题</button>
+			</div>	
+		</div>	
+		<div class="practice-answers">
+			<span>答案：</span>
+			<div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="practice-result">
+	<h1>您已做完最后一道题</h1>
+	<p>完成练习，离通过考试更进一步</p>
+	<ul class="clear">
+		<li class="practice-result-green">
+			<a>
+				<label><i class="glyphicon glyphicon-ok"></i></label>
+				<span>0</span>
+				<p>做对题数</p>
+			</a>
+		</li>
+		<li class="practice-result-red">
+			<a>
+				<label><i class="glyphicon glyphicon-remove"></i></label>
+				<span>0</span>
+				<p>做错题数</p>
+			</a>
+		</li>
+		<li class="practice-result-gray">
+			<a>
+				<label><i class="glyphicon glyphicon-bookmark"></i></label>
+				<span>0</span>
+				<p>未做题数</p>
+			</a>
+		</li>
+	</ul>
+	<div>
+		<button class="btn btn-orange" onclick="rePractice()">重新练习</button>
+		<button class="btn btn-primary" onclick="toPractice()">返回查看</button>
+		<button class="btn btn-white-blue" onclick="redirect('/ept/manage/practice/list')">返回练习中心</button>
+	</div>
+</div>
+
+<div class="practice-placeholder">
+	<div class="placeholder">
+		<p>暂无试题</p>
+		<p><button class="btn btn-white-blue" onclick="redirect('/ept/manage/practice/list')">返回练习中心</button></p>
+	</div>
+</div>
+
+<script>
+var	datas = {"praxisIds":[5148,17156,17157,17164,17166,17193,17195,17199,17200,17201,17203,17204,17205,17206,17208,17211,18622,18625,18638,18640,18663,18664,18678,18681,18687,18700,18703,18706,18707,18719,18721,18736,18737,18739,18740,18742,18743,18744,18756,18757,18758,18759,18760,18761,18762,18763,18764,18765,18776,18778,19466,19471,19473,19474,19704,19706,19707,19708,19710,19830,19831,19837,19838,19877,19879,19883,19968,19969,19995,19996,20080,20081,20082,20083,20085,20086,20087,20088,20089,20090,20113,20115,20117,20118,20222,20466,20470,20474,20935,20965,20966,20968,20969,20972,20973,20974,22072,22073,22074,22075,22076,22077,22078,22079,22114,22119,22144,22207,22208,22211,22212,22215,22216,26730,26988,26993,27264,27269,27278,27342,27343,27344,27345,27346,27347,27348,27349,27350,27351,27352,27353,27354,27355,27356,27357,27358,27359,27361,27362,27363,27364,27365,27366,27367,27368,27369,27371,27372,27374,27375,27376,27377,27378,27379,27380,27381,27382,27383,27385,27386,27388,27389,27391,27392,27393,27394,27395,27396,27397,27399,27401,27402,27403,27404,27405,27406,27407,27408,27409,27410,27411,27412,27413,27414,27415,27416,27417,27418,27419,27420,27421,27422,27423,27424,27425,27426,27427,27428,27429,27430,27431,27432,27433,27434,27435,27436,27437,27438,27439,27440,27441,27442,27443,27444,27445,27446,27447,27448,27449,27450,27451,27452,27453,27454,27455,27456,27458,27460,27461,27462,27463,27464,27465,27466,27470,27471,27472,27473,27474,27475,27476,27477,27478,27479,27480,27481,27482,27483,27484,27485,27486,27487,27488,27489,27490,27491,27492,27493,27494,27495,27496,27497,27498,27499,27500,27502,27503,27504,27506,27508,27509,27510,27511,27512,27513,27514,27515,27516,27517,27518,27519,27520,27521,27522,27523,27524,27525,27526,27527,27528,27529,27530,27531,27532,27533,27534,27535,27536,27537,27538]};
+</script>
+<script type="text/javascript" src="/ept/s/js/practice/practice.js?335188629.js"></script>

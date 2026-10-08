@@ -1,0 +1,356 @@
+
+<!doctype html>
+<!--[if IE 8]><html class="no-js ie ie8" lang="zh"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9" lang="zh"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="zh"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta name="force-rendering" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<!--  host name: SdustWEB: 0 -->
+	<title>山东科技大学-实验室安全教育系统</title>
+	<link rel="shortcut icon" href="/ept/s/favicon.ico?335188629.ico">
+	
+	<script>function bust(){document.write='';window.top.location=window.self.location;setTimeout(function(){document.body.innerHTML='';},0);window.self.onload=function(evt){document.body.innerHTML='';};}if(window.top !== window.self){try{bust();}catch(ex){bust();}}</script>
+<script type="text/javascript" src="/ept/s/jquery/jquery.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery/jquery-migrate.min.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery_validation/jquery.validate.min.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery_validation/additional-methods.min.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery_validation/localization/messages_zh.min.js?335366811.js"></script>
+<link href="/ept/s/bootstrap/css/bootstrap.min.css?335366811.css" rel="stylesheet" type="text/css"/>
+<link href="/ept/s/bootstrap/iCheck/css/skins/all.css" rel="stylesheet">
+<link href="/ept/s/bootstrap/Font-Awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/ept/s/select2/css/select2.css" rel="stylesheet">
+<link href="/ept/s/zTree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+
+<script type="text/javascript" src="/ept/s/bootstrap/js/bootstrap.min.js?335366811.js"></script>
+<script src="/ept/s/bootstrap/iCheck/js/icheck.js"></script>
+<script src="/ept/s/select2/js/select2.min.js"></script>
+<script src="/ept/s/zTree/js/jquery.ztree.all-3.5.min.js"></script>
+<link href="/ept/s/css/login.css?335188629.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="header">
+        <div class="container">
+             <div class="login-left">
+                 <img src="/ept/s/images/LOGO.png" alt="">
+             </div>
+        </div>
+    </div>
+    <div class="mian">
+        <div class="banner">
+            <img id="img11" style="width:100%;" src="/ept/s/images/holder1.png" alt="">
+            <div class="lunbo">            
+                <div class="lunbo-list lunbo-list1">
+                    <img id="img11" src="/ept/s/images/login_bg_1.jpg" alt="">
+                </div>
+                <div class="lunbo-list lunbo-list2">
+                    <img src="/ept/s/images/login_bg_2.jpg" alt="">
+                </div>
+                <div class="lunbo-list lunbo-list3">
+                    <img src="/ept/s/images/login_bg_3.jpg" alt="">
+                </div>
+                <div class="lunbo-list lunbo-list4">
+                    <img src="/ept/s/images/login_bg_4.jpg" alt="">
+                </div>              
+            </div>       
+            <div class="container clogin">
+                <div class="log-in">
+                	<div class="tabTit">
+						<h1 rel="sso">统一认证</h1> 
+						<h1 rel="normal">登录</h1>
+					</div>
+					<div class="tabBox" rel="sso">
+						<div class="sso">
+                			<button type="button" class="btn navbar-btn" onclick="javascript: location.href='/ept/vlab/loginsso'">统一认证登录</button>
+                		</div>
+                	</div>
+                	<div class="tabBox" rel="normal">
+		                <html:javascript formName="loginForm" dynamicJavascript="true" staticJavascript="false" /> 
+		           		<form name="login" method="POST" action="." onSubmit="return submitLoginForm(this)">
+		                    <input id="realPassword" type="hidden" name="password" />
+							<div class="error">
+								
+							</div>
+							<div class="input-group input-group-logo">
+		                        <span class="input-group-addon"><img src="/ept/s/images/account.png" alt="账号"></span>
+		                        <input name="username" type="text" class="form-control" placeholder="请输入账号" />
+		                    </div>
+		                    <div class="input-group input-group-logo">
+		                        <span class="input-group-addon"><img src="/ept/s/images/password.png" alt="密码"></span>
+		                        <input id="password" type="password" class="form-control" placeholder="请输入密码" autocomplete="off" />
+		                    </div>
+		                    <button type="submit" class="btn navbar-btn">登录</button>
+			        	</form>
+			        </div>
+                </div>
+            </div>
+        </div>
+        
+       <div class="container news">
+       	  <div class="col-sm-6 col-md-4">
+		      <div class="newslist newslist1">
+		         <div class="newslist-top">
+		         	<h1><span><a href="/ept/manage/notice/find/more?type=0" target="_blank">更多>></a></span></h1>
+		         </div>
+		         <div class="newslist-bottom list-notice-0">
+		         
+		         </div>
+		      </div>
+		   </div>
+		   
+		 <div class="col-sm-6 col-md-4">
+		      <div class="newslist newslist2">
+		         <div class="newslist-top">
+		         	<h1><span><a href="/ept/manage/notice/find/more?type=1" target="_blank">更多>></a></span></h1>
+		         </div>
+		         <div class="newslist-bottom list-notice-1">
+		         </div>
+		      </div>
+		   </div>
+		   
+		<div class="col-sm-6 col-md-4">
+		      <div class="newslist newslist3">
+		         <div class="newslist-top">
+		         	<h1><span></span></h1>
+		         </div>
+		         <div class="newslist-bottom">
+			   		<p><i>工科类实验：</i><span>机械类、电气类、建筑类、电子类、光电类、冶炼实验</span></p>
+			   		<p><i>理科类实验：</i><span>生物实验安全、物理实验类、化学类、网络安全实验、声波实验、电磁实验</span></p>
+			   		<p><i>通识类实验：</i><span>消防实验、辐射实验</span></p>
+		         </div>
+		      </div>
+		   </div>
+       </div>
+    </div>
+    <!--安全图标-->
+   	<div class="safeMark container">
+   		<h1>安全图标<a href="/ept/s/safety/icon.html" target="_blank">更多>></a></h1>
+   		<div class="swiper">
+	   		<ul>
+	   			<li><img src="/ept/s/images/login-safe/1.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/2.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/3.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/4.jpg"></li>
+	   			<li style="height: 113px;"><img src="/ept/s/images/login-safe/5.jpg"></li>
+	   			<li style="height: 112px;"><img src="/ept/s/images/login-safe/6.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/7.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/8.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/9.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/10.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/11.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/12.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/13.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/14.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/15.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/17.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/18.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/19.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/20.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/21.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/22.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/23.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/24.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/25.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/26.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/27.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/28.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/29.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/30.jpg"></li>
+	   			<li><img src="/ept/s/images/login-safe/31.jpg"></li>
+	   		</ul>
+   		</div>
+   	</div>
+    <div style="flex:1"></div>
+    <div class="footer" style="position: relative;">
+         <div class="container">
+            <p>建设单位：山东科技大学&emsp;合作单位：<a target="_blank" href="http://www.rainier.net.cn/">北京润尼尔网络科技有限公司</a></p>
+         	<p>Copyright &copy; 2007 - 2019 Rainier-Rainier. All Rights Reserved.</p>
+         </div>
+    </div>
+<script type="text/javascript" src="/ept/context_path.js?1.js"></script>
+<script type="text/javascript" src="/ept/s/crypto/rsa.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/crypto/passwd_encrypt.js?335366811.js"></script>
+<script src="/ept/s/js/ajax.js"></script>
+<script>
+var path = '/ept';
+var $account = $('input[name=username]'),
+	$password = $('#password'),
+	$password_real = $('#realPassword'),
+	$kaptcha = $('input[name=kaptcha_login]'),
+	$kaptcha_image = $('#kaptchaImage'),
+	$error = $('.error');
+var isShowTabSSO = false;	//是否显示统一认证登录窗口，需要时，直接改为true即可
+$(document).ready(function(){
+	//验证码处理
+	$kaptcha_image.click(function(){
+		$kaptcha.val('');
+	   	$error.text('');
+	   	$(this).fadeOut({duration:500})
+	   	  	.attr('src', contextPath+'/login/captcha/?' + Math.floor(Math.random()*10000000000) )
+	  		.fadeIn({duration:2000}); 
+	});
+	$kaptcha.change(function(){
+		$error.text('');
+	});
+	//背景图片自动轮播
+    var i_mun = 0;
+    var num = $(".lunbo-list").length;
+    var t = setInterval(function move() {
+        if(i_mun == num - 1){
+            i_mun = -1
+        }
+        $(".lunbo-list").eq(i_mun + 1).css('z-index','1').siblings('.lunbo-list').css('z-index','-1');
+        i_mun++;
+    }, 6000);
+    
+	//轮询刷新当前在线人数
+	/*
+	onlineUser();
+	setInterval(onlineUser, 60000);
+	*/
+	
+	//查询通知公告、规章制度
+	getNotice(0, $('.list-notice-0'));
+	getNotice(1, $('.list-notice-1'));
+	
+	//是否显示统一认证登录窗口
+	if(isShowTabSSO) {
+		$('.tabTit h1').click(function(){
+			var rel = $(this).attr('rel');
+			toggleTab(rel);
+		});
+		toggleTab('sso');
+	}
+	else {
+		$('.tabTit h1[rel=sso]').remove();
+		$('.tabBox[rel=sso]').remove();
+		$('.tabBox[rel=normal]').show();
+	}
+});
+function submitLoginForm(form){
+//  $.ajax({url:'../vlabIntegration/login', type: "POST", data: {account:$('input[name=username]').val()}, async:false});
+	//在线人数限制
+	var maxActive = 2000;
+	var excludeAccount =
+		['admin@test.com', '994408', '309942', '996246', '996038', '996259', '995712', '994402', '995893', '996152',
+		'990751001', '996490', '994539', '996019', '992928', '991854', '20201001', '3625', '995677', '992372',
+		'994653', '994409', '991860', '995048', '994003', '994004', '993870', '993621', '992940', '992817',
+		'992481', '992076'];
+	var flag = true;
+	if ($account && $.inArray($account.val(), excludeAccount) == -1) {
+		$.ajax({
+			url: path + '/manage/sessionRecord/online',
+			type: 'POST',
+			dataType: 'JSON',
+			async: false,
+			success: function (data) {
+				if (data.data.online >= maxActive) {
+					$error.text('当前在线人数过多，请稍后再试!');
+					flag = false;
+				}
+			},
+			error: function (xhr, textStatus, errorThrown) {
+				$error.text('当前在线人数过多，请稍后再试!');
+				flag = false;
+			}
+		});
+	}
+	if (!flag) {
+		return false;
+	}
+	var password = $password.val();
+	if(password){
+		if(password.length > 50) {
+			$error.text('密码不能超过50个字符!');
+			return false;
+		}
+		var passwdEncrypt = new PasswdEncrypt('83a1bbb97c661d1222cc253d3fafed3032cb7ace4b6e5fb01d2379542cee99dffc9015c4c1bd54418c17790c40b5b5cb86bb5fb190f2faa59cdff4a2fce8e19cee6643b24e5871c2e29fa86f91a6c0864d70165c8224f20d670f6540f4b049f049ce700fc6ee2abe1b0928034584ce5f1ce4c2afb6020ec64ee5a93de81fe4e5b2e1937e05ad50e99815f82fa951254f8fe9eb50b20e6a62e9b72f984037740738062702f1e35ee3873ed9ef25c85d57cb2dbc30bc83a44961daff03a6d8e7a0a91afd853e53784f79ebc8b4ed55e0b9eb2e4c260d0e8be6548957b671519d747bb3e993c93ddf2155e8fe1bcf4bbf4a64d651a7084643a435092d445a5805e1','10001');
+		var pwd = passwdEncrypt.encrypt(password, '.wP7YpW.SaNhy08rltwFIKEa_qMx_66cSlZeSHBeT0UuVXf50s');
+		$password_real.val(pwd);
+	}
+	return true;
+}
+function onlineUser() {
+	ajax(path + '/manage/sessionRecord/online', null, function(result) {
+		var online = 0;
+		if(result.statusCode == 200) {
+			online = result.data.online;
+		}
+		$('.online-user span').text(online);
+	});
+}
+function getNotice(type, $list) {
+	ajax(path + '/manage/notice/find/list', {type: type}, function(result) {
+		$list.empty();
+		if(result.statusCode == 200) {
+			var notices = result.data.notices;
+			if(notices.length == 0) {
+				$list.append('<p class="placeholder">暂无发布内容~</p>');
+			}
+			else {
+				var $ul = $('<ul></ul>').appendTo($list);
+				var count = 0;
+				for(var i=0; i<notices.length; i++) {
+					if(count > 4) {
+						break;
+					}
+					$ul.append('<li><a href="' + path + '/manage/notice/find/view?id=' + notices[i].id + '" target="_blank">' + notices[i].title + '</a></li>');
+					count++;
+				}
+			}
+		}
+		else {
+			$list.append('<p class="placeholder">获取内容出错！</p>');
+		}
+	});
+}
+/*安全标识轮播*/
+var oul = $('.swiper ul'),
+ 	oli = oul.find('li'),
+ 	group = 0,
+ 	timer,
+ 	olinum = oli.length;
+move();
+if(oli.length>=9){
+	oul.append(oli.clone());
+}
+oul.width(3*oli.length*oli.width())
+function move(){
+	if(oli.length>=9){
+		timer = setInterval(function(){
+			group = group+0.5;
+			if(group>=olinum*(oli.width()+50)){
+				group = 0;
+			}
+			oul.animate({'left':-group+'px'},10,'linear')
+		},10)
+	}
+}
+$('.swiper').hover(function(){
+	clearInterval(timer);
+},function(){
+    move();
+});
+
+function toggleTab(rel) {
+	$('.tabBox').hide();
+	$('.tabBox[rel=' + rel + ']').show();
+	$('.tabTit h1').removeClass('active');
+	$('.tabTit h1[rel=' + rel + ']').addClass('active');
+}
+</script>
+  <!--[if lt IE 9]>
+    <script src="/ept/s/html5shim.js?335366811.js"></script>
+  <![endif]-->
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="/ept/s/pngfix.js?335366811.js"></script>
+	<![endif]-->
+	<!--[if IE 8]>
+	<script src="/ept/s/selectivizr.js?335366811.js"></script>
+<![endif]-->
+</body>
+</html>

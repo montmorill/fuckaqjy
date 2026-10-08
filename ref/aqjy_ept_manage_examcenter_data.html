@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="/ept/s/css/test.css?335188629.css">
+<div class="navigation">
+	<li class="active">考试中心</li>
+</div>
+
+<div class="responsive pageBox">
+	<div class="main-search main-search3 card">
+    		<div class="search-url" url="/ept/manage/examcenter/data" target=""></div>
+	
+    	<div class="main-search3-group clear">
+			<ul class="nav navbar-nav search-item" name="state">	
+		     	<li><span class="active">全部</span></li>
+		     	<li><span rel="0" class="">未开始</span></li>
+		     	<li><span rel="1" class="">进行中</span></li>
+		     	<li><span rel="2" class="">已结束</span></li>
+		    </ul>
+		   	<div class="input-group search-item">
+		      	<input type="text" class="form-control" name="name" value="" placeholder="请输入考试名称...">
+		      	<div class="input-group-btn">
+		        	<button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+		      	</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="card">
+    	<div class="g-table">
+    		<table class="table table-stripeds table-hovers">
+    			<thead>
+		            <tr>
+		            	<th class="hidden-xs hidden-sm" style="width: 70px;">序号</th>
+		            	<th class="tl">名称</th>
+		            	<th class="hidden-xs" style="width: 12%;">起止时间</th>
+		            	<th class="" style="width: 8%;">状态</th>
+		                <th class="hidden-xs" style="width: 8%;padding-left: 0;padding-right: 0;">时长(分钟)</th>
+		            	<th class="hidden-xs" style="width: 8%;">考试次数</th>
+		            	<th class="hidden-xs" style="width: 8%;">考试成绩</th>
+		                <th class="col-xs-3" style="width: 26%;">操作</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		        		<tr id="912">
+		        			<td class="hidden-xs hidden-sm">1</td>
+		        			<td class="tl">济南校区2026级新生及新入职教师实验室安全教育培训及考试</td>
+		        			<td class="hidden-xs">2026-09-19 00:00<br/>2026-10-09 23:59</td>
+		        			<td>
+			                		<dd style="color:red">进行中</dd>
+	                        </td>
+		        			<td class="hidden-xs">60</td>
+		        			<td class="hidden-xs" style="padding-left: 0;padding-right: 0;">
+		        				 0 
+		        				/ 3
+		        			</td>
+		        			<td class="hidden-xs">
+									<span>--</span>
+							</td>
+		        			<td>
+												<a href="/ept/manage/examcenter/check?id=192860" class="btn btn-white-blue" onclick="return checkExamClickHandler(this);">开始考试</a>
+									
+		        			</td>
+		        		</tr>
+		        </tbody>
+    		</table>
+    	</div>
+    
+    <div class="div-pagination" rel="">
+	    <div>
+	        <ul class="pagination">
+	            <li class="j-first disabled">
+	            	<span class="icon-step-backward" aria-hidden="true"></span>
+	            </li>
+	            <li class="j-prev disabled">
+	            	<span class="icon-chevron-left" aria-hidden="true"></span>
+	            </li>
+	            
+        		<li class="j-num active"><span>1</span></li>
+	           	
+	            <li class="j-next disabled">
+	            	<span class=" icon-chevron-right" aria-hidden="true"></span>
+	            </li>
+	            <li class="j-last disabled">
+	            	<span class="icon-step-forward" aria-hidden="true" rel="1"></span>
+	            </li>
+	            <li><input type="text" value="1" /></li>
+	            <li class="j-jumpto">
+	            	<span class="icon-play" aria-hidden="true" title="跳转"></span>
+	            </li>
+	        </ul>
+	    </div>
+	    <div>
+	        <span>共1条，共1页</span>
+	    </div>
+	    <div class="pager">
+	<input type="hidden" name="page.page" value="1" />
+    <input type="hidden" name="page.size" value="10" />
+     	<input type="hidden" name="page.sort[0]" value="creation" />
+    	<input type="hidden" name="page.sort[0].dir" value="DESC" />
+	    </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript" src="/ept/s/js/examcenter/test.js?335188629.js"></script>

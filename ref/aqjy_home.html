@@ -1,0 +1,280 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js ie ie8" lang="zh"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9" lang="zh"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="zh"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta name="force-rendering" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<!--  host name: SdustWEB: 0 -->
+	<title>实验室安全教育系统</title>
+	<link rel="shortcut icon" href="/ept/s/favicon.ico?335188629.ico">
+	
+	<script>function bust(){document.write='';window.top.location=window.self.location;setTimeout(function(){document.body.innerHTML='';},0);window.self.onload=function(evt){document.body.innerHTML='';};}if(window.top !== window.self){try{bust();}catch(ex){bust();}}</script>
+<script type="text/javascript" src="/ept/s/jquery/jquery.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery/jquery-migrate.min.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery_validation/jquery.validate.min.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery_validation/additional-methods.min.js?335366811.js"></script>
+<script type="text/javascript" src="/ept/s/jquery_validation/localization/messages_zh.min.js?335366811.js"></script>
+<link href="/ept/s/bootstrap/css/bootstrap.min.css?335366811.css" rel="stylesheet" type="text/css"/>
+<link href="/ept/s/bootstrap/iCheck/css/skins/all.css" rel="stylesheet">
+<link href="/ept/s/bootstrap/Font-Awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/ept/s/select2/css/select2.css" rel="stylesheet">
+<link href="/ept/s/zTree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+
+<script type="text/javascript" src="/ept/s/bootstrap/js/bootstrap.min.js?335366811.js"></script>
+<script src="/ept/s/bootstrap/iCheck/js/icheck.js"></script>
+<script src="/ept/s/select2/js/select2.min.js"></script>
+<script src="/ept/s/zTree/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="/ept/s/layer-v2.3/layer.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.core.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.navTab.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.ajax.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.alertMsg.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.dialog.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.checkbox.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.validate.method.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.ui.js?335188629.js"></script>
+<script type="text/javascript" src="/ept/s/bstp/bstp.regional.zh.js?335188629.js"></script><link href="/ept/s/css/common.css?335188629.css" rel="stylesheet">
+<script type="text/javascript">
+$(function(){
+	BSTP.init({
+		loginUrl:"/ept/login/dwz/", 
+		loginTitle:"登录",	// 弹出登录对话框
+	});
+});
+</script>
+</head>
+<body>
+	<header class="navbar navbar-static-top" role="banner">
+    	<div class="container">
+    		<div class="navbar-header">
+    		    <button class="navbar-toggle collapsed " type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+                <a href="/ept">
+                    <img src="/ept/s/images/logo_head.png">实验室安全教育系统
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav mynavbar">
+<li class="active"><a type="GET" onclick="location.href='/ept/'">首页</a></li>
+
+<li><a onclick="location.href='/ept/manage/learn/'">学习中心</a></li>
+
+<li><a onclick="location.href='/ept/manage/practice/'">练习中心</a></li>
+
+<li><a onclick="location.href='/ept/manage/examcenter/'">考试中心</a></li>
+
+
+
+
+
+
+<li><a onclick="location.href='/ept/manage/question/'">调查</a></li>
+		      	</ul>
+		      	<ul class="nav navbar-nav navbar-right">
+			        <li class="navbar-personal">
+						<a href="javascript:;">
+							<img src="/ept/s/images/touxiang.png" />
+							<span class="text-ellipsis">{{USER}}</span>
+				        </a>
+				        <div class="dropdown-menu  navbar-operation">
+		        		  	<ul>
+		        		     	<li><a href="javascript:;" onclick="location.href='/ept/manage/userMessage/?rel=message'"><i class="icon-bell-alt"></i>我的消息</a></li>
+		        		     	
+		        		     	<li><a href="javascript:;" onclick="location.href='/ept/manage/userMessage/?rel=information'"><i class="icon-user"></i>个人资料</a></li>
+		        		     	<li><a href="/ept/change_password/" target="dialog" width="590" height="290" title="修改密码"><i class="icon-key"></i>修改密码</a></li>
+		        		     	<li><a href="/ept/logout/"><i class="icon-off"></i>退出</a></li>
+		        		  	</ul>
+			        	</div>
+			        </li>
+		      	</ul>
+		    </nav>
+    	</div>
+    </header>
+    
+	<div id="main" class="main">
+		<div class="container">
+        
+    <div class="g-right-mian">
+		
+        <div class="main-panel">
+<link href="/ept/s/css/index.css" rel="stylesheet">
+
+<div>
+<div class="list-index clear">
+	<h3>我的培训
+		<a href="javascript:;" onclick="location.href='/ept/manage/learn/'">更多>></a>
+	</h3>			
+  	<div class="train">                 	              		
+      	<div class="train-list">
+          	<div class="train-box" rel="218">
+              	<div class="train-box-top">
+					<img class="l-img" src="/ept/s/images/course/default.jpg" alt="">
+				</div>	
+				<div class="train-box-bottom">
+				     <h1>2026年济南校区新生及新入职教师实验室安全教育培训</h1>
+				     <ul>
+				     	<li><span>培训状态：</span><p>进行中</p></li>
+				     	<li><span>开始时间：</span><p>2026-09-17 16:54</p></li>
+				     	<li><span>结束时间：</span><p>2026-10-09 23:59</p></li>
+				     </ul>
+				</div>
+			 </div>	
+          	<div class="train-box" rel="214">
+              	<div class="train-box-top">
+					<img class="l-img" src="/ept/s/images/course/default.jpg" alt="">
+				</div>	
+				<div class="train-box-bottom">
+				     <h1>校级实验室安全教育通识培训（2026）</h1>
+				     <ul>
+				     	<li><span>培训状态：</span><p>进行中</p></li>
+				     	<li><span>开始时间：</span><p>2026-09-17 10:00</p></li>
+				     	<li><span>结束时间：</span><p>2026-10-10 23:59</p></li>
+				     </ul>
+				</div>
+			 </div>	
+		</div>
+	</div>
+</div>
+</div>
+
+<div>
+<div class="list-index list-index2">
+     <h3>我的考试
+     	<a href="javascript:;" onclick="location.href='/ept/manage/examcenter/'">更多>></a>
+     </h3>
+     <div class="test-grop exam-list">
+    	<div class="test-list" rel="192950">
+    		<div class="line-active"></div>
+        	<p>济南校区2026级新生及新入职教师实验室安全教育培训及考试</p>
+            <div class="test-lst-stat">
+            	<div class="fl">
+                    <span>时间：</span>
+                    <span>2026-09-19 00:00:00 ~ 2026-10-09 23:59:01</span>
+                </div>
+                <div class="fr">
+                    <span>状态：</span>
+                    <span>进行中</span>
+                </div>
+                
+             </div>
+		</div>
+	</div>
+</div>
+<div class="list-index list-index2">
+	<h3>调查问卷 <a href="javascript:;" onclick="location.href='/ept/manage/question/'">更多>></a></h3>
+    <div class="test-grop questionnaire-list">                  
+    	<div class="test-list" rel="1">
+    		<div class="line-active "></div>
+        	<p>实验室安全教育开展调查问卷</p>
+		</div>
+	</div>
+</div>
+</div>
+<div>
+	<div class="list-index list-index2">
+		<h3>通知公告 <a href="/ept/manage/notice/find/more?type=0" target="_blank">更多>></a></h3>
+	    <div class="test-grop notice0-list">                  
+        	<div class="test-list" rel="33">
+        		<div class="line-active "></div>
+            	<p>关于做好2026级新生及新入职教师实验室安全教育培训及考试工作的通知</p>
+			</div>
+        	<div class="test-list" rel="30">
+        		<div class="line-active "></div>
+            	<p>关于做好2025级新生及新入职教师实验室安全教育培训及考试工作的通知</p>
+			</div>
+        	<div class="test-list" rel="24">
+        		<div class="line-active "></div>
+            	<p>关于做好2024级新生及新入职教师实验室安全教育培训及考试工作的通知</p>
+			</div>
+        	<div class="test-list" rel="23">
+        		<div class="line-active "></div>
+            	<p>关于做好2022级新生及新入职教师实验室 安全教育培训及考试工作的通知</p>
+			</div>
+		</div>
+	</div>
+	<div class="list-index list-index2">
+		<h3>规章制度 <a href="/ept/manage/notice/find/more?type=1" target="_blank">更多>></a></h3>
+	    <div class="test-grop notice1-list">                  
+        	<div class="test-list" rel="29">
+        		<div class="line-active "></div>
+            	<p>山东科技大学实验室安全教育与准入实施办法</p>
+			</div>
+        	<div class="test-list" rel="21">
+        		<div class="line-active "></div>
+            	<p>山东科技大学实验室安全工作规程</p>
+			</div>
+        	<div class="test-list" rel="20">
+        		<div class="line-active "></div>
+            	<p>关于加强实验室安全管理工作的意见</p>
+			</div>
+        	<div class="test-list" rel="19">
+        		<div class="line-active "></div>
+            	<p>山东科技大学危险化学品安全管理办法</p>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+var basePath = 'http://aqjy.sdust.edu.cn/ept';
+$(function(){
+	var a =  $('.train-list');
+	var b =  $('.exam-list');
+	var c =  $('.questionnaire-list');
+	var d =  $('.notice0-list');
+	var e =  $('.notice1-list');
+	placemg(a);
+	placemg(b);
+	placemg(c);
+	placemg(d);
+	placemg(e);
+});
+function placemg(e){
+	var placem='<div class="placemg"><img src="/ept/s/images/placemg.png"></img></div>';
+	if(!e.children().length){  
+		e.after(placem);
+	}
+} 
+</script>
+<script src="/ept/s/js/index/index.js"></script>
+        </div>
+    </div>
+		</div>
+	</div>
+	
+	<div style="flex:1"></div>
+    <footer class="footer">
+		<div class="container">
+            <p>建设单位：山东科技大学&emsp;合作单位：<a target="_blank" href="http://www.rainier.net.cn/">北京润尼尔网络科技有限公司</a></p>
+            <p>推荐使用 &nbsp;<a href="http://ept.owmlab.net/soft/" target="_blank"><b>IE10以上</b></a>、<a href="http://ept.owmlab.net/soft/360/" target="_blank"><b>360极速模式</b></a>、<a href="http://ept.owmlab.net/soft/firefox/" target="_blank"><b>Firefox</b></a>、<a href="http://cn.bing.com/search?q=chrome" target="_blank"><b>Chrome</b></a> &nbsp;等浏览器</p>
+        </div>
+	</footer>
+<script src="/ept/s/js/i18n/strings.js"></script>
+<script>
+var path = '/ept', loginUserDepartmentId = 8739;
+</script>
+<script src="/ept/s/js/ajax.js"></script>
+<script src="/ept/s/js/json2.js"></script>
+<script src="/ept/s/js/common.js"></script>
+<script src="/ept/s/js/jquery.pin.min.js"></script>
+<script src="/ept/s/ckeditor1/ckeditor.js"></script>
+<script src="/ept/s/My97/WdatePicker.js"></script>
+<script src="/ept/s/js/index/base_index.js?335188629.js"></script>
+  <!--[if lt IE 9]>
+    <script src="/ept/s/html5shim.js?335366811.js"></script>
+  <![endif]-->
+	<!--[if lt IE 7]>
+	<script defer type="text/javascript" src="/ept/s/pngfix.js?335366811.js"></script>
+	<![endif]-->
+	<!--[if IE 8]>
+	<script src="/ept/s/selectivizr.js?335366811.js"></script>
+<![endif]-->
+</body>
+</html>
